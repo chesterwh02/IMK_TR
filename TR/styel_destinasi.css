@@ -1,0 +1,125 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card {
+    margin-top: 10px; /* Adjust the top margin */
+    margin-bottom: 10px; /* Adjust the bottom margin */
+    border-radius: 15px;
+}
+
+#destinasiCarousel {
+    margin-bottom: 0; /* Set margin-bottom to 0 for the carousel */
+}
+
+#destinasiCarousel,
+#destinasiCarousel .carousel-inner,
+#destinasiCarousel .carousel-inner .carousel-item {
+    height: 400px; /* Set the height for the carousel */
+}
+
+#destinasiCarousel .carousel-inner .carousel-item img {
+    height: 100%; /* Ensure the image takes up the full height of the carousel */
+}
+
+@media (max-width: 768px) {
+    #destinasiCarousel,
+    #destinasiCarousel .carousel-inner,
+    #destinasiCarousel .carousel-inner .carousel-item {
+        height: 200px; /* Adjust height for smaller screens if needed */
+    }
+
+    #destinasiCarousel .carousel-inner .carousel-item img {
+        height: 100%; /* Ensure the image takes up the full height of the carousel on smaller screens */
+    }
+}
+
+/*============= 2==================== */
+#destinasiCarousel2 {
+    margin-bottom: 0; /* Set margin-bottom to 0 for the carousel */
+}
+
+#destinasiCarousel2,
+#destinasiCarousel2 .carousel-inner,
+#destinasiCarousel2 .carousel-inner .carousel-item {
+    height: 400px; /* Set the height for the carousel */
+}
+
+#destinasiCarousel2 .carousel-inner .carousel-item img {
+    height: 100%; /* Ensure the image takes up the full height of the carousel */
+}
+
+@media (max-width: 768px) {
+    #destinasiCarousel2,
+    #destinasiCarousel2 .carousel-inner,
+    #destinasiCarousel2 .carousel-inner .carousel-item {
+        height: 200px; /* Adjust height for smaller screens if needed */
+    }
+
+    #destinasiCarousel2 .carousel-inner .carousel-item img {
+        height: 100%; /* Ensure the image takes up the full height of the carousel on smaller screens */
+    }
+}
+
+/*============= 3==================== */
+#destinasiCarousel3 {
+    margin-bottom: 0; /* Set margin-bottom to 0 for the carousel */
+}
+
+#destinasiCarousel3,
+#destinasiCarousel3 .carousel-inner,
+#destinasiCarousel3 .carousel-inner .carousel-item {
+    height: 400px; /* Set the height for the carousel */
+}
+
+#destinasiCarousel3 .carousel-inner .carousel-item img {
+    height: 100%; /* Ensure the image takes up the full height of the carousel */
+}
+
+@media (max-width: 768px) {
+    #destinasiCarousel3,
+    #destinasiCarousel3 .carousel-inner,
+    #destinasiCarousel3 .carousel-inner .carousel-item {
+        height: 200px; /* Adjust height for smaller screens if needed */
+    }
+
+    #destinasiCarousel3 .carousel-inner .carousel-item img {
+        height: 100%; /* Ensure the image takes up the full height of the carousel on smaller screens */
+    }
+}
+
+/*============= 4==================== */
+#destinasiCarousel4 {
+    margin-bottom: 0; /* Set margin-bottom to 0 for the carousel */
+}
+
+#destinasiCarousel4,
+#destinasiCarousel4 .carousel-inner,
+#destinasiCarousel4 .carousel-inner .carousel-item {
+    height: 400px; /* Set the height for the carousel */
+}
+
+#destinasiCarousel4 .carousel-inner .carousel-item img {
+    height: 100%; /* Ensure the image takes up the full height of the carousel */
+}
+
+@media (max-width: 768px) {
+    #destinasiCarousel4,
+    #destinasiCarousel4 .carousel-inner,
+    #destinasiCarousel4 .carousel-inner .carousel-item {
+        height: 200px; /* Adjust height for smaller screens if needed */
+    }
+
+    #destinasiCarousel4 .carousel-inner .carousel-item img {
+        height: 100%; /* Ensure the image takes up the full height of the carousel on smaller screens */
+    }
+}
+

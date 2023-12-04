@@ -1,0 +1,168 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    margin-right: 10px;
+}
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-media a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none; /* Remove underline from the links */
+}
+
+.social-media img {
+  width: 30px; /* Adjust the width as needed */
+}
+
+/* Akomodasi */
+button {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+button:focus,
+button:active {
+  outline: none;
+}
+
+button.active {
+  border-bottom: 2px solid #3498db;
+}
+#cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card h4 {
+  margin-top: 0;
+}
+
+.rating {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.star {
+  color: #ffc107;
+  margin-right: 4px;
+}
+
+.location {
+  color: #2196F3;
+}
+
+.description {
+  margin-top: 1px;
+  color: #585858;
+}
+
+.price {
+  margin-top: 1px;
+  color: #e91e63;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+.load-more-container {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.load-more-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 44%;
+  height: 1px;
+  background-color: #000;
+  z-index: -1;
+}
+
+.load-more-line2 {
+  position: absolute;
+  top: 50%;
+  left: 56%;
+  width: 44%;
+  height: 1px;
+  background-color: #000;
+  z-index: -1;
+}
+
+.load-more-button {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #343A40;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.load-more-button:hover {
+  background-color: #343A40;
+  color: #fff;
+
+}

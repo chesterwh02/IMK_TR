@@ -1,0 +1,18 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Gaya tombol Kirim Pesan */
+  .btn-primary {
+    background-color: #343a40; /* Warna latar belakang tombol */
+    width: 100%; /* Lebar tombol 100% dari parent */
+  }
+  

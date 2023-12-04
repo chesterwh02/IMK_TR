@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SOLOTI-GO</title>
+    <link rel="icon" href="LOGO/SALATIGA.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style_akomodasi.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="LOGO/LOGO.png" alt="Soloti-Go Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="1_destinasi.html">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="8_form.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(255, 255, 255);">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <ol class="breadcrumb m-0 p-0" style="background-color: rgb(255, 255, 255);">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-dark">Home</a></li>
+                    <li class="breadcrumb-item active text-dark" aria-current="page">Akomodasi</li>
+                </ol>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #000000;">
+                        Sort by
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" style="background-color: #ffffff; right: 0;"
+                        aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Most Popular</a>
+                        <a class="dropdown-item" href="#">By Review Score</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Rekomendasi -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="display-4" style="font-weight: 600; font-size: 32px;">Rekomendasi rumah liburan untuk Anda
+                </h3>
+                <p class="lead">Informasi daftar akomodasi bagi kalian yang ingin menghabisakan waktu di Daerah Kota
+                    Salatiga, pilihlah sesuai dengan kebutuhan dan kenyamanan anda!</p>
+            </div>
+        </div>
+    </div>
+    <!-- Button -->
+    <div class="d-flex align-items-center justify-content-center vh-100 mb-4">
+        <button class="active" onclick="showCard('Sidorejo')" id="SidorejoButton">Sidorejo</button>
+        <button onclick="showCard('Argomulyo')" id="ArgomulyoButton">Argomulyo</button>
+        <button onclick="showCard('Sidomukti')" id="SidomuktiButton">Sidomukti</button>
+        <button onclick="showCard('Tingkir')" id="TingkirButton">Tingkir</button>
+    </div>
+
+    <div id="cardContainer" class="mb-5">
+        <!-- Sidorejo -->
+        <div id="SidorejoCard1" class="card">
+            <img class="card-image" src="KONTEN/s (1).png" alt="Gambar Jakarta">
+            <div class="card-content">
+                <h4>Pondok Keluarga Osamaliki</h4>
+                <p class="rating">
+                    <span class="star">&#9733;</span>8.5
+                </p>
+                <p class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#2196F3"
+                        class="feather-icon">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z" />
+                    </svg>
+                    <span class="location-text">Lokasi: Sidorejo, Salatiga</span>
+                </p>
+                <p class="description">Harga per malam mulai dari:</p>
+                <p class="price"> Rp 242.250 </p>
+            </div>
+        </div>
+
+        <div id="SidorejoCard1" class="card">
+            <img class="card-image" src="KONTEN/s (2).png" alt="Gambar Jakarta">
+            <div class="card-content">
+                <h4>Diponegoro House Salatiga</h4>
+                <p class="rating">
+                    <span class="star">&#9733;</span>8.5
+                </p>
+                <p class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#2196F3"
+                        class="feather-icon">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z" />
+                    </svg>
+                    <span class="location-text">Lokasi: Sidorejo, Salatiga</span>
+                </p>
+                <p class="description">Harga per malam mulai dari:</p>
+                <p class="price"> Rp 269.100 </p>
+            </div>
+
+        </div>
+        <div id="SidorejoCard1" class="card">
+            <img class="card-image" src="KONTEN/s (3).png" alt="Gambar Jakarta">
+            <div class="card-content">
+                <h4>Hotel Surya Indah Salatiga</h4>
+                <p class="rating">
+                    <span class="star">&#9733;</span>8.2
+                </p>
+                <p class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#2196F3"
+                        class="feather-icon">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z" />
+                    </svg>
+                    <span class="location-text">Lokasi: Sidorejo, Salatiga</span>
+                </p>
+                <p class="description">Harga per malam mulai dari:</p>
+                <p class="price"> Rp 237.500 </p>
+            </div>
+        </div>
+
+        <div id="SidorejoCard1" class="card">
+            <img class="card-image" src="KONTEN/s (4).png" alt="Gambar Jakarta">
+            <div class="card-content">
+                <h4>Oemah Djari Hotel Syariah</h4>
+                <p class="rating">
+                    <span class="star">&#9733;</span>8.2
+                </p>
+                <p class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#2196F3"
+                        class="feather-icon">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z" />
+                    </svg>
+                    <span class="location-text">Lokasi: Sidorejo, Salatiga</span>
+                </p>
+                <p class="description">Harga per malam mulai dari:</p>
+                <p class="price"> Rp 323.000 </p>
+            </div>
+        </div>
+
+        <!-- Argomulyo -->
+        <div id="ArgomulyoCard1" class="card hidden">
+            <img class="card-image" src="/KONTEN/a (1).png" alt="Gambar Bandung">
+            <div class="card-content">
+                <h4>Laras Asri Resort & Spa</h4>
+                <p class="rating">
+                    <span class="star">&#9733;</span>8.5
+                </p>
+                <p class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#2196F3"
+                        class="feather-icon">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z" />
+                    </svg>
+                    <span class="location-text">Lokasi: Argmulyo, Salatiga</span>
+                </p>
+                <p class="description">Harga per malam mulai dari:</p>
+                <p class="price"> Rp 528.200 </p>
+            </div>
+        </div>
+        <div id="ArgomulyoCard2" class="card hidden">
+            <img class="card-image" src="/KONTEN/a (2).png" alt="Gambar Bandung">
+            <div class="card-content">
+                <h4>d’Emmerick Salib Putih Hotel</h4>
+                <p class="rating">
+                    <span class="star">&#9733;</span>8.5
+                </p>
+                <p class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#2196F3"
+                        class="feather-icon">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z" />
+                    </svg>
+                    <span class="location-text">Lokasi: Argmulyo, Salatiga</span>
+                </p>
+                <p class="description">Harga per malam mulai dari:</p>
+                <p class="price"> Rp 522.500 </p>
+            </div>
+        </div>
+        <div id="ArgomulyoCard3" class="card hidden">
+            <img class="card-image" src="/KONTEN/a (3).png" alt="Gambar Bandung">
+            <div class="card-content">
+                <h4>Kayu Arum Resort</h4>
+                <p class="rating">
+                    <span class="star">&#9733;</span>8.6
+                </p>
+                <p class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#2196F3"
+                        class="feather-icon">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z" />
+                    </svg>
+                    <span class="location-text">Lokasi: Argmulyo, Salatiga</span>
+                </p>
+                <p class="description">Harga per malam mulai dari:</p>
+                <p class="price"> Rp 517.467 </p>
+            </div>
+        </div>
+        <div id="ArgomulyoCard4" class="card hidden">
+            <img class="card-image" src="/KONTEN/a (4).png" alt="Gambar Bandung">
+            <div class="card-content">
+                <h4>Hotel Permata 3</h4>
+                <p class="rating">
+                    <span class="star">&#9733;</span>5.7
+                </p>
+                <p class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#2196F3"
+                        class="feather-icon">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z" />
+                    </svg>
+                    <span class="location-text">Lokasi: Argmulyo, Salatiga</span>
+                </p>
+                <p class="description">Harga per malam mulai dari:</p>
+                <p class="price"> Rp 105.480 </p>
+            </div>
+        </div>
+
+        <!-- Sidomukti -->
+        <div id="SidomuktiCard1" class="card hidden">
+            <img class="card-image" src="/KONTEN/si(1).jpg" alt="Gambar Yogyakarta">
+            <div class="card-content">
+                <h4>Grand Wahid Hotel</h4>
+                <p class="rating">
+                    <span class="star">&#9733;</span>8.7
+                </p>
+                <p class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#2196F3"
+                        class="feather-icon">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z" />
+                    </svg>
+                    <span class="location-text">Lokasi: Sidomukti, Salatiga</span>
+                </p>
+                <p class="description">Harga per malam mulai dari:</p>
+                <p class="price"> Rp 593.750 </p>
+            </div>
+        </div>
+        <div id="SidomuktiCard2" class="card hidden">
+            <img class="card-image" src="/KONTEN/si (2).png" alt="Gambar Yogyakarta">
+            <div class="card-content">
+                <h4>Tetirah Boutique Hotel</h4>
+                <p class="rating">
+                    <span class="star">&#9733;</span>8.2
+                </p>
+                <p class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#2196F3"
+                        class="feather-icon">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z" />
+                    </svg>
+                    <span class="location-text">Lokasi: Sidomukti, Salatiga</span>
+                </p>
+                <p class="description">Harga per malam mulai dari:</p>
+                <p class="price"> Rp 475.000 </p>
+            </div>
+        </div>
+        <div id="SidomuktiCard3" class="card hidden">
+            <img class="card-image" src="/KONTEN/si (3).png" alt="Gambar Yogyakarta">
+            <div class="card-content">
+                <h4>Urbanview Syariah</h4>
+                <p class="rating">
+                    <span class="star">&#9733;</span>8.6
+                </p>
+                <p class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#2196F3"
+                        class="feather-icon">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z" />
+                    </svg>
+                    <span class="location-text">Lokasi: Sidomukti, Salatiga</span>
+                </p>
+                <p class="description">Harga per malam mulai dari:</p>
+                <p class="price"> Rp 129.276 </p>
+            </div>
+        </div>
+        <div id="SidomuktiCard4" class="card hidden">
+            <img class="card-image" src="/KONTEN/si (4).jpg" alt="Gambar Yogyakarta">
+            <div class="card-content">
+                <h4>PituRooms</h4>
+                <p class="rating">
+                    <span class="star">&#9733;</span>9.3
+                </p>
+                <p class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#2196F3"
+                        class="feather-icon">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z" />
+                    </svg>
+                    <span class="location-text">Lokasi: Sidomukti, Salatiga</span>
+                </p>
+                <p class="description">Harga per malam mulai dari:</p>
+                <p class="price"> Rp 855.000 </p>
+            </div>
+        </div>
+
+        <!-- Tingkir -->
+        <div id="TingkirCard1" class="card hidden">
+            <img class="card-image" src="/KONTEN/t (1).png" alt="Gambar Bali">
+            <div class="card-content">
+                <h4>Front One Gosyen Hotel Salatiga</h4>
+                <p class="rating">
+                    <span class="star">&#9733;</span>8.9
+                </p>
+                <p class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#2196F3"
+                        class="feather-icon">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z" />
+                    </svg>
+                    <span class="location-text">Lokasi: Tingkir, Salatiga</span>
+                </p>
+                <p class="description">Harga per malam mulai dari:</p>
+                <p class="price"> Rp 399.000 </p>
+            </div>
+        </div>
+        <div id="TingkirCard2" class="card hidden">
+            <img class="card-image" src="/KONTEN/t (2).png" alt="Gambar Bali">
+            <div class="card-content">
+                <h4>Senjoyo Agung Guesthouse</h4>
+                <p class="rating">
+                    <span class="star">&#9733;</span>8.1
+                </p>
+                <p class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#2196F3"
+                        class="feather-icon">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z" />
+                    </svg>
+                    <span class="location-text">Lokasi: Tingkir, Salatiga</span>
+                </p>
+                <p class="description">Harga per malam mulai dari:</p>
+                <p class="price"> Rp 304.000 </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load More -->
+    <div class="load-more-container">
+        <div class="load-more-line"></div>
+        <div class="load-more-line2"></div>
+        <button class="load-more-button btn">Load More</button>
+    </div>
+
+    <!-- Deskripsi -->
+    <!-- Sidorejo -->
+    <div class="container mt-5 text-container" id="SidorejoDeskripsi">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="display-4" style="font-weight: 600; font-size: 32px;">Kecamatan Sidorejo
+                </h3>
+                <p class="lead">Kecamatan Sidorejo, yang terletak di sebelah timur pusat kota Salatiga, Provinsi Jawa
+                    Tengah, Indonesia, memainkan peran penting sebagai gerbang selamat datang bagi mereka yang memasuki
+                    atau meninggalkan kota ini. Secara geografis, kecamatan ini merupakan bagian dari batas terluar
+                    Salatiga, menciptakan suasana unik yang menyambut dan merangkul setiap pengunjung atau penduduk yang
+                    melintasinya.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Argomulyo -->
+    <div class="container mt-5 text-container hidden" id="ArgomulyoDeskripsi">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="display-4" style="font-weight: 600; font-size: 32px;">Kecamatan Argomulyo
+                </h3>
+                <p class="lead">Argomulyo adalah salah satu kecamatan yang berada di Kota Salatiga, Provinsi Jawa
+                    Tengah, Indonesia. Kecamatan ini terletak di bagian selatan Kota Salatiga dan secara umum lebih
+                    dikenal sebagai kawasan pusat industri yang berada di Kelurahan Randuacir dan Kelurahan Noborejo.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidomukti -->
+    <div class="container mt-5 text-container hidden" id="SidomuktiDeskripsi">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="display-4" style="font-weight: 600; font-size: 32px;">Kecamatan Sidomukti
+                </h3>
+                <p class="lead">Kecamatan Sidomukti, yang terletak di pusat Kota Salatiga, Provinsi Jawa Tengah,
+                    Indonesia, menampilkan dinamika dan keberagaman yang khas dari sebuah wilayah perkotaan yang
+                    berkembang. Berlokasi di jantung kota, kecamatan ini menjadi pusat kegiatan sosial, ekonomi, dan
+                    budaya yang signifikan.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tingkir -->
+    <div class="container mt-5 text-container hidden" id="TingkirDeskripsi">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="display-4" style="font-weight: 600; font-size: 32px;">Kecamatan Tingkir
+                </h3>
+                <p class="lead">Tingkir adalah sebuah kecamatan di Kota Salatiga, Provinsi Jawa Tengah, Indonesia.
+                    Tingkir berada di bagian selatan Salatiga. Di kecamatan ini terdapat Terminal Bus Tingkir dan
+                    Gerbang Tol Salatiga.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3" id="footer">
+        <div class="social-media">
+            <!-- Add your social media icons and links here -->
+            <a href="#" class="text-white mx-2"><img src="LOGO/yt.png" alt="Facebook"></a>
+            <a href="#" class="text-white mx-2"><img src="LOGO/TW.png" alt="Twitter"></a>
+            <a href="#" class="text-white mx-2"><img src="LOGO/IG.png" alt="Instagram"></a>
+        </div>
+        <div class="footer-info">
+            <br>
+            <!-- Add information about the website here -->
+            <p>Soloti-Go selalu menyediakan
+                Informasi seputar wisata, kuliner, Event, Akomodasi, Desa Wisata, <br>
+                dan Informasi untuk wisatawan yang berada dikota tercinta Salatiga</p>
+            <p>&copy; 2023 E-tourism Salatiga. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Script -->
+    <script>
+        function showCard(area) {
+            var cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                if (card.id.startsWith(area + 'Card')) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            var buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            var selectedButton = document.getElementById(area + 'Button');
+            selectedButton.classList.add('active');
+
+            var deskripsi = document.getElementById(area + 'Deskripsi');
+            if (deskripsi) {
+                deskripsi.classList.remove('hidden');
+            }
+
+            // Menghandle deskripsi Sidorejo
+            var deskripsiSidorejo = document.getElementById('SidorejoDeskripsi');
+            if (deskripsiSidorejo && area !== 'Sidorejo') {
+                deskripsiSidorejo.classList.add('hidden');
+            }
+
+            // Menyembunyikan deskripsi untuk area lain
+            var areas = ['Sidomukti', 'Argomulyo', 'Tingkir'];
+            areas.forEach(otherArea => {
+                if (otherArea !== area) {
+                    var otherDeskripsi = document.getElementById(otherArea + 'Deskripsi');
+                    if (otherDeskripsi) {
+                        otherDeskripsi.classList.add('hidden');
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

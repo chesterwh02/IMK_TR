@@ -1,0 +1,257 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    margin-right: 10px;
+    /* Beri margin agar tidak terlalu dekat dengan teks */
+}
+
+/* carousel */
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+.carousel-caption {
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-caption h2 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Content Box */
+.content-box {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    transition: color 0.5s ease;
+}
+
+.content-box:hover .menu-image {
+    transform: scale(1.2);
+    filter: brightness(50%);
+}
+
+.content-box:hover .description {
+    color: #ffffff;
+    /* Ubah warna sesuai kebutuhan */
+}
+
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none; /* Remove underline from the links */
+}
+
+.social-media img {
+    width: 30px; /* Adjust the width as needed */
+}
+
+
+
+/* Card Pada Event */
+.card-img-container {
+    position: relative;
+    height: 100%;
+    /* Sesuaikan dengan tinggi kontainer */
+}
+
+.card-img-container img {
+    object-fit: cover;
+    height: 100%;
+    /* Sesuaikan dengan tinggi kontainer */
+    width: 100%;
+}
+
+.card-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.load-more-container {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.load-more-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 44%;
+    height: 1px;
+    background-color: #000;
+    z-index: -1;
+}
+
+.load-more-line2 {
+    position: absolute;
+    top: 50%;
+    left: 56%;
+    width: 44%;
+    height: 1px;
+    background-color: #000;
+    z-index: -1;
+}
+
+.load-more-button {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #343A40;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.load-more-button:hover {
+    background-color: #343A40;
+    color: #fff;
+
+}
+
+.read-more-button {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #343A40;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.read-more-button:hover {
+    background-color: #343A40;
+    color: #fff;
+}
+
+.left-column {
+    width: 70%;
+    float: left;
+}
+
+.right-column {
+    width: 30%;
+    float: right;
+}
+
+.caption-container2 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card-container2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.card-img-container2 {
+    flex: 0 0 30%;
+}
+
+.card-img-container2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caption-container2 {
+    flex: 0 0 70%;
+    margin-top: -15px;
+    padding: 10px;
+    text-align: left;
+}
+.date {
+    color: #999; 
+    font-style: italic;
+    font-size: 0.8em; 
+    margin-left: 5px; 
+}
+
+.latest-info a {
+    color: black;
+    text-decoration: none; 
+    transition: color 0.1s; 
+}
+
+.latest-info a:hover {
+    color: red; 
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination .page-item {
+    margin-right: 10px;
+}
+
+.pagination .page-item a.page-link {
+    color: #000000; /
+}
+
+.pagination .page-item.disabled .page-link {
+    background-color: #343A40; 
+    color: #ffffff; 
+}
+
+

@@ -1,0 +1,143 @@
+.navbar {
+    background-color: #343a40;
+}
+.logo {
+    max-width: 200px; 
+    height: auto;
+    margin-right: 10px; /* Beri margin agar tidak terlalu dekat dengan teks */
+}
+
+/* DESA WISATA */
+body {
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.container {
+    background: #e0dee6 !important;
+    height: 33rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 3px #d3d3d3;
+}
+
+
+/* .abc {
+    padding-left: 40px
+} */
+
+/* .pqr {
+    padding-right: 70px;
+    padding-top: 14px
+} */
+
+/* .para {
+    float: right;
+    margin-right: 0;
+    padding-left: 80%;
+    top: 0
+} */
+
+.fa-star {
+    color: yellow
+}
+
+li {
+    list-style: none;
+    line-height: 30px;
+    color: #000
+}
+
+/* .col-md-2 {
+    padding-bottom: 6rem;
+    font-weight: bold;
+} */
+
+/* .col-md-2 a {
+    text-decoration: none;
+    color: #000
+}
+
+.col-md-2.mio {
+    font-size: 12px;
+    padding-top: 7px
+}
+
+.des::after {
+    content: '.';
+    font-size: 0;
+    display: block;
+    border-radius: 20px;
+    height: 6px;
+    width: 55%;
+    background: yellow;
+    margin: 14px 0
+} */
+
+/* .r4 {
+    padding-left: 25px
+}
+
+.btn-outline-warning {
+    border-radius: 0;
+    border: 2px solid yellow;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    width: 70%
+} */
+
+@media screen and (max-width: 620px) {
+    .container {
+        width: 98%;
+        display: flex;
+        flex-flow: column;
+        text-align: center
+    }
+
+    .des::after {
+        content: '.';
+        font-size: 0;
+        display: block;
+        border-radius: 20px;
+        height: 6px;
+        width: 35%;
+        background: yellow;
+        margin: 10px auto
+    }
+
+    .pqr {
+        text-align: center;
+        margin: 0 30px
+    }
+
+    .para {
+        text-align: center;
+        padding-left: 90px;
+        padding-top: 10px
+    }
+
+    .klo {
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+        margin-right: 40px
+    }
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none; /* Remove underline from the links */
+}
+
+.social-media img {
+    width: 30px; /* Adjust the width as needed */
+}
